@@ -5,6 +5,14 @@
     <title></title>
   </head>
   <body>
-<%= @diary_entry %>
+    <div>
+      <%= @diary_entry %>
+    </div>
+    <div>
+      <form action="/add_entry">
+        <input type="submit" name="" value="Add entry">
+      </form>
+    </div>
+
   </body>
 </html>

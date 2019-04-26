@@ -6,7 +6,7 @@ class DailyDiary < Sinatra::Base
   enable :sessions
 
   get '/' do
-    'Hello world!'
+    erb :index
   end
 
   get '/add_entry' do
