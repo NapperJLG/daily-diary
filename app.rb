@@ -14,6 +14,7 @@ class DailyDiary < Sinatra::Base
   end
 
   post '/' do
+    @entry_title = params[:title]
     @diary_entry = params[:entry]
     erb :index
   end
